@@ -7,8 +7,6 @@ import DeleteSweepIcon from '@material-ui/icons/DeleteSweep';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Tooltip from '@material-ui/core/Tooltip';
-import AddIcon from '@material-ui/icons/Add';
-import { makeStyles } from '@material-ui/core/styles';
 import PlusOneIcon from '@material-ui/icons/PlusOne';
 import List from '@material-ui/core/List';
 
@@ -47,7 +45,7 @@ const Todo = () => {
 
         setTodoItems((preTasks) => {
             return preTasks.filter((task, index) => {
-                return index != id;
+                return index !== id;
             });
         });
     }
